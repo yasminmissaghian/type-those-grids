@@ -1,0 +1,54 @@
+repo: "grid-layout"
+canvasCourse: "web-design-2"
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - google-fonts
+
+html:
+  - path: "index.html"
+    has:
+      - check: 'link[href*="Merriweather"]'
+        message: "The Google Font, `Merriweather` (regular, italic) is missing"
+      - "h1"
+      - "h2"
+      - "p"
+      - "dl"
+      - "dl > dt"
+      - "dl > dd"
+      - "figure"
+      - "figure > img + figcaption"
+      - 'header[role="banner"]'
+      - 'main[role="main"]'
+    hasNot:
+      - "img:not([alt])"
+      - check: 'img[alt=""]:not([role="presentation"]):not([aria-details])'
+        message: 'Is this image an important part of the content? If so it needs a descriptive `alt=""` attribute or the `aria-details` attribute. If it’s only for presentation add the attribute `role="presentation"`'
+    search:
+      - "The Seven Wonders of the Ancient World"
+      - "Temple of Artemis"
+      - "Selçuk, Turkey"
+      - "Colossus of Rhodes"
+      - "Rhodes, Greece"
+      - "Gardens of Babylon"
+      - "Temple of Artemis"
+
+css:
+  - path: "css/main.css"
+    has:
+      - ["html", "font-family", "Merriweather, serif"]
+      - ["html", "line-height", "1.5"]
+    search:
+      - "grid-template-columns"
+      - "grid-template-areas"
+      - "gap"
+      - "1fr"
+      - "grid-area"
+      - "align-self"
+
+screenshots:
+  - path: "index.html"
+    sizes: [1000]
