@@ -20,7 +20,7 @@ deliverables: '1 HTML file, 1 CSS file, images'
 - *Typefaces:* `Merriweather` (regular, italic)
 - *Text sizes:* `1.5rem`, `1.8rem`
 - *Line-heights:* `1.5`
-- *Margins:* `1.5rem`
+- *Margins:* `1rem`, `1.5rem`
 - *Paddings:* `1rem`, `1.5rem`
 - *Gaps:* `.75rem`
 
