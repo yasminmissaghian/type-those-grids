@@ -10,7 +10,6 @@ deliverables: '1 HTML file, 1 CSS file, images'
 
 - *Fork this repository.*
 - Use CSS grids to code the layout sketched earlier in class.
-- *Keep it simple:* Use `fr` units. Use “areas”.
 - Text can be found inside the `content.txt` file.
 - *Run it through Markbot and make sure it passes all the checks.*
 
