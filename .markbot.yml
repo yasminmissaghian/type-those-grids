@@ -1,11 +1,12 @@
-repo: "grid-layout"
-canvasCourse: "web-design-2"
+repo: "type-those-grids"
+canvasCourse: "web-design-1"
 
 inherit:
   - naming-restrict-live
   - git-2
   - html
   - css
+  - border-box
   - google-fonts
 
 html:
